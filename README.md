@@ -13,5 +13,6 @@ We conduct extensive experiments to evaluate our algorithm's performance and val
 - olptwopath_freq2: include Algorithm 2 in our paper, frequently solving LP with subgradient fine-tune throughout the whole horizon
 - olp_infrequent: include an algorithm from other papers for comparison, infrequently solving LP
 - olpgurobi: include the solver used for the LP-based method
-- olptwopath_grad: include the first-order method
-- olpgetdata: include data generation for the customer's bidding price (reward), resource consumption, and total resource
+- olgsubgrad: include the classic first-order method, with $\mathcal{O}(T^{1/2})$ regret
+- olptwopath_grad: include an enhanced first-order method, with $\mathcal{O}(T^{1/3})$ regret
+- olpgetdata: include data generation for the customer's bidding price (reward), resource consumption, and total resources
